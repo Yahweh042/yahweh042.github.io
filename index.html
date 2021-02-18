@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
@@ -8,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
 </head>
+
 <body>
   <div id="app"></div>
   <script>
@@ -15,9 +17,18 @@
       name: '',
       repo: '',
       auto2top: true,
-      search: 'auto',
+      search: {
+        paths: [],
+        placeholder: '搜索'
+      },
       loadSidebar: true,
-      // coverpage: true
+      subMaxLevel: 2,
+      // coverpage: true,
+      count: {
+        countable: true,
+        fontsize: '0.9em',
+        color: 'rgb(90,90,90)',
+      }
     }
   </script>
   <!-- Docsify v4 -->
@@ -27,5 +38,7 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-js.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-sql.min.js"></script>
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 </body>
+
 </html>
